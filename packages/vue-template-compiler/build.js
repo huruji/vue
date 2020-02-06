@@ -1848,6 +1848,11 @@ function parseFilters(exp) {
   return expression
 }
 
+/**
+ * 增加导出解析 filter 的函数
+ */
+module.exports.parseFilters = parseFilters;
+
 function wrapFilter(exp, filter) {
   var i = filter.indexOf('(');
   if (i < 0) {
